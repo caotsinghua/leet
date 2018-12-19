@@ -1,0 +1,14 @@
+{
+  "name": "leet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/caotsinghua/leet.git",
+  "author": "caoqinghua <qinghua.cao@shanbay.com>",
+  "license": "MIT",
+  "scripts": {
+    "build:ts": "tsc"
+  },
+  "dependencies": {
+    "typescript": "^3.2.2"
+  }
+}
