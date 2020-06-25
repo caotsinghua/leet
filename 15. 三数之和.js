@@ -11,22 +11,20 @@ var threeSum = function(nums) {
         if(nums[first]===nums[first-1]){
             continue
         }
-        
+        let third=nums.length-1
         for(second = first+1;second<nums.length;second++){
             
-            if(second > first && nums[second]===nums[second-1]){
+            if(second > first+1 && nums[second]===nums[second-1]){
                 continue
             }
-            let third=nums.length-1
+           
             while(second < third && nums[second]+nums[third]+nums[first]>0){
                 if(nums[first]===-1 && nums[second] === -1){
                     console.log(nums[first],nums[second],nums[third])
                 }
                 third--
             }
-            if(nums[first]===-1 && nums[second] === -1){
-                console.log(nums[first],nums[second],nums[third])
-            }
+     
             
             // 指针重合，不会再有b<c && a+b+c =0的值
             if(second === third){

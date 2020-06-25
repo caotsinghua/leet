@@ -22,5 +22,5 @@ var addBinary = function (a, b) {
       res[pos++]=1
   }
   res.reverse()
-  return res.join('')
+  return res.joi n('')
 }
